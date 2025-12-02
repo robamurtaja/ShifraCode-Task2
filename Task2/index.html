@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>شيفرة كود - تدريب وخدمات</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">شيفرة كود</h1>
+      <nav class="nav">
+        <a href="#/" class="nav-link">الرئيسية</a>
+        <a href="#/courses" class="nav-link">الدورات</a>
+        <a href="#/portfolio" class="nav-link">أعمالنا</a>
+        <a href="#/contact" class="nav-link">تواصل</a>
+      </nav>
+      <button id="open-booking" class="cta">احجز دورة</button>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeBooking">×</button>
+      <h2>نموذج حجز دورة</h2>
+      <form id="bookingForm">
+        <label>الاسم
+          <input type="text" name="name" required>
+        </label>
+        <label>رقم الجوال
+          <input type="tel" name="phone" required pattern="\+?[0-9\s-]{7,}">
+        </label>
+        <label>البريد
+          <input type="email" name="email" required>
+        </label>
+        <label>اختر الدورة
+          <select name="course" id="bookingCourse" required></select>
+        </label>
+        <button type="submit" class="btn">إرسال الحجز</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content image-modal-content">
+      <button class="modal-close" id="closeImageModal">×</button>
+      <img id="modalImage" src="" alt="عمل - شيفرة كود">
+    </div>
+  </div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> شيفرة كود — تدريب وخدمات. تابعنا على وسائل التواصل:</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/code_.center?igsh=OWF3bDY1b3loNG5q" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/share/17QEAZE1pN/?mibextid=wwXIfr" target="_blank">Facebook</a>
+      <a href="https://www.whatsapp.com/channel/0029VbBHUCv8kyyDuKmDzh2w" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+:root{
+  --accent:#148eba;
+  --dark:#0b1a2b;
+  --muted:#667085;
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --radius:12px;
+  font-family: "Segoe UI", Tahoma, Arial, "Noto Naskh Arabic", sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--dark);
+  line-height:1.5;
+  font-size:16px;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:0 16px;}
+
+.site-header{background:linear-gradient(90deg,#fff 0,#f8fbff);box-shadow:0 2px 8px rgba(10,15,30,0.04);position:sticky;top:0;z-index:40;}
+.header-inner{display:flex;align-items:center;gap:16px;padding:12px 0;}
+.logo{font-weight:700;color:var(--accent);margin:0}
+.nav{display:flex;gap:12px;flex:1;justify-content:center}
+.nav-link{color:var(--dark);text-decoration:none;padding:6px 10px;border-radius:8px}
+.nav-link:hover{background:rgba(11,114,255,0.08)}
+.cta{background:var(--accent);color:#fff;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
+.menu-toggle{display:none;background:transparent;border:0;font-size:20px}
+
+.hero{padding:36px 0;display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:center}
+.hero-card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,20,40,0.06)}
+.hero h2{margin:0 0 12px 0}
+.hero p{color:var(--muted)}
+.hero-illustration {width:fit-content; height:auto;display:flex;align-items:center;justify-content:center;border-radius:10px;overflow:hidden;background:white; padding:0;}
+
+.section{padding:28px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,20,40,0.04);display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0}
+.meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.card .desc{color:var(--muted);font-size:15px}
+
+.btn{background:var(--accent);color:#fff;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
+
+.card .btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolioGrid .card {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+#portfolioGrid .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;   
+  border-radius: 12px;
+}
+
+.portfolio-item {
+  background: none !important;
+  padding: 0 !important;
+}
+
+.portfolio-img {
+  background: none !important;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+  object-fit: contain !important; 
+  background: transparent !important;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: var(--dark);
+}
+
+.section .card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  border: 1px solid #e8ecf3;
+  box-shadow: 0 6px 18px rgba(15,20,40,0.06);
+  transition: 0.3s ease;
+}
+
+.section .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+}
+
+.section .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+.section .card p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.section .card a.nav-link {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.section .card a.nav-link:hover {
+  background: #0d6a84;
+}
+
+.section .card label {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--dark);
+}
+
+.section .card input,
+.section .card textarea {
+  background: #fafafa;
+  border: 1px solid #d7dce4;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.section .card input:focus,
+.section .card textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(20,142,186,0.15);
+  outline: none;
+}
+
+.section .btn {
+  background: var(--accent);
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.section .btn:hover {
+  background: #0d6a84;
+}
+
+label{display:block;margin-bottom:10px;font-size:14px}
+input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-top:6px;font-size:15px}
+textarea{min-height:120px;resize:vertical}
+
+.modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(10,15,30,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto; 
+  z-index: 9999; 
+}
+.modal.hidden{display:none}
+
+.modal-content:not(.image-modal-content) {
+  position: relative; 
+  background: #ffffff !important;
+  box-shadow: 0 12px 30px rgba(10,15,30,0.25) !important;
+  padding: 24px !important;
+  border-radius: 14px !important;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh; 
+  overflow-y: auto; 
+}
+
+.image-modal-content{max-width:900px}
+
+.modal-close{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border:0;
+  background:transparent;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.site-footer{padding:20px 0;color:var(--muted);font-size:14px;border-top:1px solid #eef2f8}
+
+#portfolioGrid,
+#coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+#portfolioGrid > .card:nth-child(n+4),
+#coursesGrid > .card:nth-child(n+4) {
+  grid-column: span 1;
+}
+
+#coursesPreview .card > div,
+#coursesPreview .card div[style] {
+  display: flex !important;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+#coursesPreview .card .btn.book-now {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+
+#coursesPreview .card .nav-link {
+  background: var(--accent) !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+#coursesPreview .card .btn.book-now,
+#coursesPreview .card .nav-link {
+  float: none !important;
+  margin: 0 !important;
+}
+
+@media (max-width:700px){
+  #portfolioGrid,
+  #coursesGrid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
