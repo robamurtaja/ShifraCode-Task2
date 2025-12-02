@@ -37,7 +37,7 @@
 ---
 
 project-folder/
-_|_ index.html       # الصفحة الرئيسية .
+- index.html       # الصفحة الرئيسية .
 - styles.css       # تنسيقات CSS .
 - app.js           # منطق الموقع وتوجيه الصفحات .
 - images/          # مجلد الصور (Hero، الأعمال) .
@@ -48,4 +48,4 @@ _|_ index.html       # الصفحة الرئيسية .
 git clone https://github.com/robamurtaja/ShifraCode-Task2.git
 2. بعد تنزيله أو فك الضغط، افتح مجلد المشروع.
 
-3. شغّل الموقع بفتح الملف:
+3. شغّل الموقع بفتح الملف: index.html
