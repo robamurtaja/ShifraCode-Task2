@@ -44,4 +44,8 @@ project-folder/
 - README.md        # شرح المشروع .
 
 ## طريقة التشغيل
-git clone https://
+1. حمّل المشروع من GitHub:
+git clone https://github.com/robamurtaja/ShifraCode-Task2.git
+2. بعد تنزيله أو فك الضغط، افتح مجلد المشروع.
+
+3. شغّل الموقع بفتح الملف:
