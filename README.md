@@ -37,7 +37,7 @@
 ---
 
 project-folder/
-- index.html       # الصفحة الرئيسية .
+_|_ index.html       # الصفحة الرئيسية .
 - styles.css       # تنسيقات CSS .
 - app.js           # منطق الموقع وتوجيه الصفحات .
 - images/          # مجلد الصور (Hero، الأعمال) .
